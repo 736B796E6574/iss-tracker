@@ -9,3 +9,20 @@ async function issLocation() {
     console.log(issPos)
     init(issPos);
 }
+/**renders the map from google maps api with the iss location at the centre and then creates a marker which displas as an image of the iss */
+function init(pos) {
+    // renders map
+    const map = new google.maps.Map(document.getElementById('map'), {
+        center: pos,
+        zoom: 2,
+        mapTypeId: 'satellite'
+    });
+    // displays the location marker on the map
+    const image = 'https://user-images.githubusercontent.com/1794026/81976251-43c99800-95f6-11ea-9cfe-b3e1520f31f7.png'
+    const marker = new google.maps.Marker({
+        map,
+        position: pos,
+        icon: image,
+    });
+
+}
