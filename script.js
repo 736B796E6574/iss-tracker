@@ -25,4 +25,9 @@ function init(pos) {
         icon: image,
     });
 
+    /**reloads the page every 30 seconds to track the ISS */
+    setTimeout(() => {
+        document.location.reload();
+    }, 30000);
+
 }
