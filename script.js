@@ -14,7 +14,7 @@ function init(pos) {
     // renders map
     const map = new google.maps.Map(document.getElementById('map'), {
         center: pos,
-        zoom: 10,
+        zoom: 2,
     });
     // displays the location marker on the map
     const image = 'https://user-images.githubusercontent.com/1794026/81976251-43c99800-95f6-11ea-9cfe-b3e1520f31f7.png'
